@@ -1,0 +1,3 @@
+include ':crosstrace'
+include ':app'
+rootProject.name = "xtlib"

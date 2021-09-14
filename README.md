@@ -13,9 +13,10 @@ allprojects {
 }
 ```
 
-Add the Crosstrace dependency to your app build.gradle 
+Add both the McuManager and Crosstrace dependencies to your app build.gradle 
 ```Gradle
 dependencies {
+  implementation 'io.runtime.mcumgr:mcumgr-ble:0.11.0'
   implementation 'com.github.saphieng:crosstrace-android:1.0.0'
 }
 ```

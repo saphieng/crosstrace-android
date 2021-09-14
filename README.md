@@ -21,7 +21,7 @@ dependencies {
 ```
 
 ## Usage
-1. After adding Crosstrace as a dependency, import the package within your Kotlin file `import au.com.saphi.plugins.crosstrace.Crosstrace`
+1. After adding Crosstrace as a dependency, import the package at the top of your Kotlin file `import au.com.saphi.plugins.crosstrace.Crosstrace`
 2. Initialize `private var xt = Crosstrace()`
 3. Your app needs to filter BLE devices based on the SMP_SERVICE uuid accessible using `xt.SMP_SERVICE` and only connect to these devices.
 4. After connecting to a BLE device, invoke `initializeConnection` with, the connected device's name, Activity and Context (crucial step) to start SMP communication
@@ -107,4 +107,3 @@ If a specific field value is needed from the CBOR map returned, running the foll
 ```Kotlin
 CBOR.toStringMap(response.payload)[field] // where <field> refers to a key in the CBOR map
 ```
-
